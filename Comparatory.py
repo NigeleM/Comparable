@@ -7,11 +7,8 @@ def end():
 
 def compare(map1,map2):
     #remove spaces 
-    map1 = map1.replace(' ','')
-    map2 = map2.replace(' ','')
-    # create mapping lists
-    map1=list(map1)
-    map2=list(map2)
+    map1 = map1.split(' ')
+    map2 = map2.split(' ')
     # turn values into integers
     mapping1 = [int(num) for num in map1]
     mapping2 = [int(num) for num in map2]
@@ -59,4 +56,4 @@ def compare(map1,map2):
 
 
 
-compare('1 2 3 4','4 5 6 7')
+compare('1 2 3 14','4 5 6 7')
